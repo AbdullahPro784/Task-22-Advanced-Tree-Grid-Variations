@@ -1,5 +1,7 @@
 # 🚀 Task 20: Advanced Grid Customization & Logic
 
+![Task 20 Preview](preview.png)
+
 This update introduces significant functional and cosmetic enhancements to the Data Grid, focusing on data integrity, UX stability, and hierarchical data visualization.
 
 ## ✅ Completed Requirements (13/13)
