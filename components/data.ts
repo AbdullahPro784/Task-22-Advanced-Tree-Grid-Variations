@@ -34,6 +34,28 @@ export const DATA: Asset[] = [
         vehicle: "-",
         status: { state: "maintenance", level: 2 },
         endDate: getDate(-5), // Passed: Black
+        subRows: [
+            {
+                id: "1306811-A",
+                serial: "SUB-001",
+                category: "Saucer",
+                brand: "Kärcher",
+                type: "Accessory",
+                vehicle: "-",
+                status: { state: "operational" },
+                endDate: getDate(10),
+            },
+            {
+                id: "1306811-B",
+                serial: "SUB-002",
+                category: "Spoon",
+                brand: "Kärcher",
+                type: "Accessory",
+                vehicle: "-",
+                status: { state: "operational" },
+                endDate: getDate(12),
+            },
+        ]
     },
     {
         id: "1306700",
@@ -44,6 +66,17 @@ export const DATA: Asset[] = [
         vehicle: "-",
         status: { state: "maintenance", level: 1 },
         endDate: getDate(1), // < 2 days: Red
+         subRows: [
+            {
+                id: "1306700-1",
+                serial: "PART-X",
+                category: "Brush",
+                brand: "Tennant",
+                type: "Spare Part",
+                vehicle: "-",
+                status: { state: "repair", level: 1 },
+            }
+        ]
     },
     {
         id: "1306666",

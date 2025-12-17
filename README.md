@@ -1,36 +1,71 @@
-# 🚀 Task 20: Advanced Grid Customization & Logic
+# Asset Management - Advanced Tree Grid Variations
 
-![Task 20 Preview](preview.png)
+A modern, high-performance Asset Management interface built with **Next.js 14**, **TypeScript**, and **TanStack Table**. This project demonstrates advanced data grid capabilities, specifically focusing on hierarchical (tree) data structures and master-detail views.
 
-This update introduces significant functional and cosmetic enhancements to the Data Grid, focusing on data integrity, UX stability, and hierarchical data visualization.
+![Project Preview](/placeholder-image.png)
 
-## ✅ Completed Requirements (13/13)
+## 🚀 Key Features
 
-### 🎨 UI Stability & Search
-* **Consistent Layout:** Fixed row heights to prevent layout shift during pagination, even with fewer records (**Point 1**).
-* **Locked Dimensions:** Frozen header and cell widths to ensure visual consistency (**Point 2**).
-* **Global Search:** Fixed top-left search functionality to filter across all allowable fields (**Point 9**).
-* **Persistent Pagination:** Editing a record on Page 2/3 now keeps the user on the same page instead of resetting to Page 1 (**Point 12**).
+### 1. Unified Table Explorer
+Seamlessly switch between different table visualizations without refreshing the page. The application maintains state via URL query parameters, making views shareable.
 
-### 🛡️ Data Integrity & Validation
-* **Save Confirmation:** Double-clicking to edit now triggers a "Save/Discard" prompt to prevent accidental changes (**Point 3**).
-* **Read-Only Fields:** `Asset ID` is now locked and cannot be modified via double-click (**Point 4**).
-* **Smart Dropdowns:** The `Category` column now renders a Select Dropdown on edit instead of a text input (**Point 7**).
+### 2. Three Tree Grid Variations
+*   **Variation 1: Indented Tree**
+    *   Classic file-system style hierarchy.
+    *   Single-column indentation for a clean, familiar look.
+*   **Variation 2: Nested Lines**
+    *   Visual guide lines (L-shape connectors) tracking parent-child relationships.
+    *   Depth-based background coloring for clear visual separation.
+*   **Variation 3: Master-Detail Panel**
+    *   Full-width expandable sub-panels for detailed sub-item management.
+    *   **Interactive Sub-grids**: Directly add and edit sub-items within the panel.
 
-### ⚡ Advanced Actions
-* **Batch Deletion:** Added checkbox selection for single or bulk row deletion (**Point 5**).
-* **Context Menu:** Right-click (or 3-dot icon) on the `Vehicle` column opens a custom menu with options ("Assign Driver", "Check History") (**Point 6**).
-* **Tree Data:** Implemented hierarchical grid logic. Sales records now expand to show nested Sales Items via an arrow toggle (**Point 13**).
-
-### 🚦 Visual Indicators & Logic
-* **Conditional Date Formatting:** (**Point 10**)
-    * 🟧 **Orange:** < 5 days remaining.
-    * 🟥 **Red:** < 2 days remaining.
-    * ⬛ **Black:** Date passed.
-* **Dynamic Iconography:** The status column now renders specific icons (Spanner 🔧, Hat 🧢, Settings ⚙️) based on the numeric data value (**Point 11**).
-* **Toolbar View Switchers:** Regarding the top-right icons (**Point 8**): These were added for future implementation (e.g., Map or Analytics views) but have been removed from the current build for some reason.
+### 3. Advanced Interactions
+*   **Inline Editing**: Double-click any cell to edit content (Text, Date, Select).
+*   **Drag-and-Drop Columns**: Reorder columns effortlessly using `@dnd-kit`.
+*   **Sorting & Filtering**: Built-in multi-column sorting and global search.
+*   **Sub-Item Management**: Create new sub-items dynamically in Variation 3.
 
 ## 🛠️ Tech Stack
-* **Framework:** Next.js
-* **Grid Logic:** TanStack Table (Headless UI)
-* **Styling:** Tailwind CSS
+
+*   **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+*   **Language**: [TypeScript](https://www.typescriptlang.org/)
+*   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+*   **UI Components**: [Shadcn UI](https://ui.shadcn.com/) (Radix Primitives)
+*   **Table Logic**: [TanStack Table v8](https://tanstack.com/table/v8) (Headless)
+*   **Drag & Drop**: [@dnd-kit](https://dndkit.com/)
+*   **Icons**: [Lucide React](https://lucide.dev/)
+
+## 📦 Installation
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/asset-management-tree-grid.git
+    cd asset-management-tree-grid
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open your browser**:
+    Navigate to [http://localhost:3000](http://localhost:3000).
+
+## 🔧 Usage Guide
+
+*   **Switching Views**: Use the toggle buttons at the top right of the table to switch between Original, V1, V2, and V3.
+*   **Adding Sub-items**: Go to **Variation 3**, expand a row, and click the "+ Add subitem" button.
+*   **Editing**: Double-click on cells like "Serial", "Category", or "Status" to enter edit mode. Press `Enter` to save or `Esc` to cancel.
+*   **Reordering**: Drag column headers to change their arrangement. The order is persisted locally.
+
+## 📄 License
+
+This project is licensed under the MIT License.
