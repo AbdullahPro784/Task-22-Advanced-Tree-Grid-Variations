@@ -2,7 +2,15 @@
 
 A modern, high-performance Asset Management interface built with **Next.js 14**, **TypeScript**, and **TanStack Table**. This project demonstrates advanced data grid capabilities, specifically focusing on hierarchical (tree) data structures and master-detail views.
 
-![Project Preview](/placeholder-image.png)
+![Main Explorer View](screenshots/preview1.png)
+*Figure 1: Main Explorer Screen showing options for Original, Variant 1, Variant 2, and Variant 3.*
+
+## 📸 Previews
+
+| Variation 1 (Indented) | Variation 2 (Nested Lines) | Variation 3 (Master-Detail) |
+|:---:|:---:|:---:|
+| ![Variant 1](screenshots/preview2.png) | ![Variant 2](screenshots/preview3.png) | ![Variant 3](screenshots/preview4.png) |
+| *Classic Tree View* | *Visual Guides & Colors* | *Expandable Sub-panels* |
 
 ## 🚀 Key Features
 
