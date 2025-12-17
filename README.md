@@ -48,7 +48,7 @@ Seamlessly switch between different table visualizations without refreshing the 
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/asset-management-tree-grid.git
+    git clone https://github.com/AbdullahPro784/Task-22-Advanced-Tree-Grid-Variations
     cd asset-management-tree-grid
     ```
 
